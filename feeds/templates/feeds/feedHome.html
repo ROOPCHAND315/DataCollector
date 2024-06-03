@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'feeds/css/feedHome.css' %}?v={{ timestamp }}">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>FeedFinder</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 fixed-left">
+                <h2>Feed Finder</h2>
+                {% include 'feeds/search.html' %}
+                {% include 'feeds/feedFilter.html' %}
+            </div>
+            <div class="col-md-8">
+                <h2>Results for {{ domain }}</h2>
+                <div class="result-section">
+                    {% block results %}
+                        {% include 'feeds/results.html' %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.filter-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.filter-container h3 {
+    margin-top: 0;
+}

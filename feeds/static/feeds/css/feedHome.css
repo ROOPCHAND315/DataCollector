@@ -1,0 +1,22 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    height: 100vh; 
+    overflow: hidden;
+}
+
+/******************************* CSS FOR LEFT SIDE*******************************/
+
+.fixed-left {
+    position: fixed;
+
+}
+/******************************* CSS FOR RIGHT SIDE*******************************/
+ 
+.result-section {
+    max-height: calc(100vh - 56px); /* Adjust the 56px if needed to account for the height of the fixed <h2> */
+    overflow-y: auto;
+}

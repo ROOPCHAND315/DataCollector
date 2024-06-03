@@ -1,0 +1,9 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'feeds/css/results.css' %}">
+<div class="results-section">
+    <ul class="list-group">
+        {% for result in results %}
+            <li class="list-group-item">{{ result }}</li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'feeds/css/search.css' %}">
+
+<div class="search-container mb-4">
+    <form method="post" action="{% url 'search_feed' %}" class="form-inline">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>

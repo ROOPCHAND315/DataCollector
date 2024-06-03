@@ -1,0 +1,13 @@
+.results-section {
+    padding: 20px;
+}
+
+.results-section ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.results-section li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
